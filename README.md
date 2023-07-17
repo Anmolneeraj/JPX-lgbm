@@ -21,7 +21,7 @@ We have extracted these technical indicators along with fundamental data from fi
 #### All the technical indicators are calculated using rolling window technique ####
 
 ## Model Selection and Tuning ##
-LightGBM regression model is used in the project to predict labels and rank them.Parameters are tuned such that there isnt any chance of overfitting, as larger values for feature_fraction and bagging_fraction was leading to overfitting.
+LightGBM regression model is used in the project to predict labels and rank them.Cross validation used is TimeSeriesSplit.
 
 ## Challenges Faced ##
 1. Since the dataset was very large to handle, which nor kaggle notebook wasn't able to handle and neither my local machine.
